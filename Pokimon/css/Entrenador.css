@@ -1,0 +1,12 @@
+/* Estilos para el contenedor de la imagen */
+.image-container {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.pokemon-image {
+    max-width: 300px; /* Ajusta el tamaño máximo de la imagen */
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}

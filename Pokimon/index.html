@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>¡Aventura Pokémon!</title>
+    <style>
+        body {
+            font-family: 'Pokemon GB', sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            overflow: hidden; /* Para que la barra de desplazamiento no aparezca si la imagen es más grande */
+        }
+
+        .background-image-container {
+            position: fixed; /* La imagen se queda fija mientras se desplaza */
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1; /* Coloca la imagen detrás de otros elementos */
+        }
+
+        .background-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Cubre todo el fondo sin deformar la imagen */
+        }
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center; /* Centra el contenido verticalmente */
+            min-height: 100vh; /* Asegura que el contenido ocupe al menos toda la altura de la pantalla */
+            color: rgb(255, 255, 255); /* Color de texto principal */
+            padding: 20px;
+        }
+
+        .titleSub-poki {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .titlePoki {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px #ccc;
+        }
+
+        .text-poki {
+            font-size: 1.1em;
+        }
+
+        .botton-group {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .botton-poki {
+            background-color: #5c9c97;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 1.2em;
+            transition: background-color 0.3s ease;
+            box-shadow: 2px 2px 5px rgba(89, 165, 140, 0.2);
+            position: relative; /* Para asegurar que el z-index funcione si es necesario */
+            z-index: 1; /* Coloca los botones encima de la imagen de fondo */
+        }
+
+        .botton-poki:hover {
+            background-color: #9b59b6;
+        }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pokemon+GB&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background-image-container">
+        <img src=https://i.pinimg.com/736x/b6/88/a5/b688a54c8847d40e658aba666306a966.jpg alt="Fondo de Pokémon" class="background-image">
+    </div>
+
+    <div class="content">
+        <div class="titleSub-poki">
+            <h1 class="titlePoki">BIENVENIDO AL MUNDO POKÉMON</h1>
+            <p class="text-poki">¡Prepárate para la aventura!</p>
+        </div>
+
+        <div class="botton-group">
+            <button class="botton-poki iniciar-sesion" onclick="location.href='./vistas/login.html'">Iniciar Sesión</button>
+            <button class="botton-poki registrarse" onclick="location.href='./vistas/registrar.html'">Registrarse</button>
+        </div>
+
+        <p>¡Elige tu camino y conviértete en un gran Entrenador Pokémon!</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrarse</title>
+    <script src="../js/registrar.js"></script>
+    <link rel="stylesheet" href="../css/registrar.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pokemon+GB&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background-image-container">
+        <img src=https://i.pinimg.com/736x/a1/b7/7a/a1b77a0e8c1dd7cafdbbc982e144e752.jpg alt="Fondo de Pokémon" class="background-image">
+    </div>
+    <div class="content">
+        <div class="titleSub-poki">
+            <h1 class="titlePoki">BIENVENIDO AL MUNDO POKÉMON</h1>
+            <p class="text-poki">Registrarte para vivir la experiencia</p>
+        </div>
+        <div class="formulario-container">
+            <div class="formulario">
+                <table>
+                    <tr>
+                        <td>
+                            <label for="nombre">Nombre</label>
+                        </td>
+                        <td>
+                            <input type="text" class="input-poki" name="nombre" id="nombre" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="apellido">Apellido</label>
+                        </td>
+                        <td>
+                            <input type="text" class="input-poki" name="apellido" id="apellido" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="direccion">Dirección</label>
+                        </td>
+                        <td>
+                            <input type="text" class="input-poki" name="direccion" id="direccion" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="telefono">Teléfono</label>
+                        </td>
+                        <td>
+                            <input type="text" class="input-poki" name="telefono" id="telefono" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="email">Email</label>
+                        </td>
+                        <td>
+                            <input type="email" class="input-poki" name="email" id="email" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="contrasena">Password</label>
+                        </td>
+                        <td>
+                            <input type="password" class="input-poki" name="contrasena" id="contrasena" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="contrasenaConfirm">Re-Password</label>
+                        </td>
+                        <td>
+                            <input type="password" class="input-poki" name="contrasenaConfirm" id="contrasenaConfirm" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" style="text-align: center;">
+                            <button onclick="Registrar()" class="botton-poki">Registrar</button>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
