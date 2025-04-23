@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entrenador Pokémon</title>
+    <style>
+        body {
+            font-family: 'Pokemon GB', sans-serif;
+            background-image: url('https://i.pinimg.com/736x/4a/fa/8d/4afa8d75680b88c3e543fa61545e3f35.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding-top: 20px;
+            text-align: center;
+        }
+
+        .container {
+            background-color: rgba(255, 255, 255, 0.95);
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .character-selection {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 20px;
+            justify-content: center;
+        }
+
+        .character-box {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border: 1px solid #ccc; /* Añadimos un borde para delimitar el recuadro */
+            padding: 15px;
+            border-radius: 8px;
+            background-color: #f9f9f9; /* Un fondo suave */
+        }
+
+        .image-container-box {
+            width: 120px; /* Ajusta el tamaño según necesites */
+            height: 160px; /* Ajusta el tamaño según necesites */
+            margin-bottom: 10px;
+            overflow: hidden; /* Recorta la imagen si excede el contenedor */
+            border-radius: 5px;
+        }
+
+        .character-image {
+            width: 100%;
+            height: 100%;
+            object-fit: contain; /* Ajusta la imagen dentro del contenedor */
+        }
+
+        .character-info {
+            text-align: left;
+            margin-bottom: 10px;
+        }
+
+        .info-label {
+            font-weight: bold;
+            margin-right: 5px;
+        }
+
+        .choose-button {
+            background-color: #ffcb05;
+            color: #222;
+            font-weight: bold;
+            padding: 8px 15px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 0.9em;
+            transition: background-color 0.3s ease;
+            margin-top: 10px;
+        }
+
+        .choose-button:hover {
+            background-color: #e0b800;
+        }
+
+        .navigation-button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 1em;
+            margin-top: 20px;
+            transition: background-color 0.3s ease;
+        }
+
+        .navigation-button:hover {
+            background-color: #45a049;
+        }
+
+        .image-container {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .pokemon-image {
+            max-width: 300px;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
+            color: #8a2be2;
+        }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pokemon+GB&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Elige Tu Personaje</h1>
+        <div class="character-selection">
+            <div class="character-box">
+                <div class="image-container-box">
+                    <img src=https://static.wikia.nocookie.net/espokemon/images/6/64/Ilustraci%C3%B3n_Rojo_The_Origin.png/revision/latest/scale-to-width/360?cb=20131004021542 alt="Lucho" class="character-image">
+                </div>
+                <div class="character-info">
+                    <div><span class="info-label">Nombre:</span> Rojo</div>
+                    <div><span class="info-label">Sexo:</span> Masculino</div>
+                    <div><span class="info-label">Edad:</span> 16 años</div>
+                    </div>
+                <button class="choose-button">Escoger</button>
+            </div>
+            <div class="character-box">
+                <div class="image-container-box">
+                    <img src=https://images.wikidexcdn.net/mwuploads/wikidex/e/e7/Dawn-Maya_VP.png alt="Otro Personaje" class="character-image">
+                </div>
+                <div class="character-info">
+                    <div><span class="info-label">Nombre:</span>Hikari</div>
+                    <div><span class="info-label">Sexo:</span> Femenino</div>
+                    <div><span class="info-label">Edad:</span> 16 años</div>
+                    </div>
+                <button class="choose-button">Escoger</button>
+            </div>
+        </div>
+        <button class="navigation-button" onclick="window.location.href='Historia.html'">Ir a Historia</button>
+    </div>
+
+    <div class="image-container">
+        <h2>¡Mira mi Pokimon!</h2>
+        <img src="https://i.pinimg.com/736x/d0/b5/fd/d0b5fd220bf516cc96660a6aa4e12b14.jpg" alt="Imagen de Pokémon" class="pokemon-image">
+    </div>
+</body>
+</html>

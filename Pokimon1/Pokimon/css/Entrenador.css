@@ -1,0 +1,127 @@
+/* Estilos generales del body */
+body {
+    font-family: 'Pokemon GB', sans-serif;
+    background-image: url('https://i.pinimg.com/736x/4a/fa/8d/4afa8d75680b88c3e543fa61545e3f35.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding-top: 20px;
+    text-align: center;
+}
+
+/* Estilos para el contenedor principal */
+.container {
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Estilos para la selección de personajes */
+.character-selection {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+    justify-content: center;
+}
+
+/* Estilos para cada recuadro de personaje */
+.character-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #ccc; /* Añadimos un borde para delimitar el recuadro */
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #f9f9f9; /* Un fondo suave */
+}
+
+/* Estilos para el contenedor de la imagen del personaje */
+.image-container-box {
+    width: 120px; /* Ajusta el tamaño según necesites */
+    height: 160px; /* Ajusta el tamaño según necesites */
+    margin-bottom: 10px;
+    overflow: hidden; /* Recorta la imagen si excede el contenedor */
+    border-radius: 5px;
+}
+
+/* Estilos para la imagen del personaje */
+.character-image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Ajusta la imagen dentro del contenedor */
+}
+
+/* Estilos para la información del personaje */
+.character-info {
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+/* Estilos para las etiquetas de la información */
+.info-label {
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+/* Estilos para el botón de "Escoger" */
+.choose-button {
+    background-color: #ffcb05;
+    color: #222;
+    font-weight: bold;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 0.9em;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+.choose-button:hover {
+    background-color: #e0b800;
+}
+
+/* Estilos para el botón de navegación */
+.navigation-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1em;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.navigation-button:hover {
+    background-color: #45a049;
+}
+
+/* Estilos para el contenedor de la imagen de Pokémon */
+.image-container {
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Estilos para la imagen de Pokémon */
+.pokemon-image {
+    max-width: 300px; /* Ajusta el tamaño máximo de la imagen */
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilos para el encabezado h1 */
+h1 {
+    color: #8a2be2;
+}

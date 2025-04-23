@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Batalla Pokémon</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="battle-container">
+        <div class="opponent-info">
+            <span class="opponent-name-level"></span>
+            <div class="opponent-hp-container">
+                <div class="opponent-hp-bar"></div>
+            </div>
+        </div>
+        <div class="opponent-pokemon">
+            <img id="opponent-image" src="" alt="Pokémon Oponente">
+        </div>
+
+        <div class="battle-dialogue">
+            <p id="dialogue-text">¡Comienza la batalla!</p>
+        </div>
+
+        <div class="player-pokemon">
+            <img id="player-image" src="" alt="Tu Pokémon">
+        </div>
+        <div class="player-info">
+            <span class="player-name-level"></span>
+            <div class="player-hp-container">
+                <div class="player-hp-bar"></div>
+            </div>
+            <span class="player-hp-value"></span>
+        </div>
+
+        <div class="battle-menu">
+            <button id="fight-btn" class="menu-button">LUCHAR</button>
+            <button id="bag-btn" class="menu-button">MOCHILA</button>
+            <button id="pokemon-btn" class="menu-button">POKÉMON</button>
+            <button id="run-btn" class="menu-button">HUIR</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
